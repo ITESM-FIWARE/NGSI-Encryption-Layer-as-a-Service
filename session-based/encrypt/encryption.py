@@ -262,14 +262,14 @@ def outurl():
 
     return jsonify({'messsage':'You must log in first.'})
 
-# Cerrar cesión 
+# Cerrar sesión 
 @application.route('/logout', methods=["POST"])
 def logout():
     session.pop("user", None)
 
     return jsonify({'message':'You are logged out.'})
 
-# Iniciar cesión
+# Iniciar sesión
 @application.route('/login', methods=["POST"])
 def login():
     try : 
