@@ -1,0 +1,13 @@
+encryptocb:
+  build: .
+  container_name: ngsi_python
+  ports:
+    - "2121:2121"
+  links:
+    - mongoocb
+mongoocb: 
+  image: mongo:3.4
+  container_name: ngsi_mongo
+  volumes: 
+    - ./mongo_ngsi:/data/db
+
