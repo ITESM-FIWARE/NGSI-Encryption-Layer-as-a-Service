@@ -37,11 +37,11 @@ First, download or clone the repository to a local directory. Inside each fold o
 </pre>
 
 For a complete guide, please refer to:
-1. [Installation Guide of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Session-based service).
-1. [Installation Guide of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Token-based service).
+1. [Installation Guide of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#session-based-service).
+1. [Installation Guide of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#token-based-service).
 
 ## Getting started
-Refer to the [User Manual of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Session-based service).
+Refer to the [User Manual of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#session-based-service).
 
-Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Token-based service).
+Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#token-based-service).
 
