@@ -13,7 +13,7 @@ First, the overall overview of the encryption service is described; secondly, th
 
 ## Installation and Configuration
 ### Configuration:
-Para el correcto funcionamiento del servicio es necesario agregar una cuenta de gmail y su contraseña. La cuenta ingresada será la encargada de enviar las llaves de todos los modelos encriptados por el servicio en un mail al usuario que haga uso del servicio.
+Para el correcto funcionamiento del servicio es necesario agregar una cuenta de gmail y su contraseña. La cuenta ingresada será la encargada de enviar las llaves de todos los modelos encriptados por el servicio en un mail al usuario que haga uso de los servicios de encriptacón.
 
 #### Ingresar cuenta de correo y contraseña: 
 Una vez clonado el repositorio, ingresar en la carpeta del servicio a utilizar [session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/session-based) o [token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/token-based). Dentro de la carpeta ubicar el archivo Dockerfile, entrar y modificar las líneas 4 y 5.
@@ -24,11 +24,11 @@ Una vez clonado el repositorio, ingresar en la carpeta del servicio a utilizar [
 </pre>
 
 #### Configuracion de Gmail:
-Para que el correo electronico ingresado anteriormente pueda enviar correos por una aplicación externa es necesario autorizar esta opcion en la cuenta del correo ingresado.
+Para que el correo electronico ingresado anteriormente pueda enviar correos por una aplicación externa es necesario autorizar esta opción en la cuenta del correo ingresado.
 
 ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
-
 ![secure_apps](https://user-images.githubusercontent.com/38957081/51202845-49f61a00-18c5-11e9-88be-1ef960993ce7.png)
+Despues de activar esta opción el servicio de encriptacion será capaz de enviar correos desde la dirección proporcionada de forma automatica.
 
 ## Prerequisites
 The encryption service can be installed on any Operative System.
