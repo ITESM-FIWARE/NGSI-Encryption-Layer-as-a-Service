@@ -8,28 +8,7 @@ The main and only mandatory component of any "Powered by FIWARE" platform or sol
 
 [FIWARE data models](https://www.fiware.org/developers/data-models/) have been harmonized to enable data portability for different applications including, but not limited, to Smart Cities. They are intended to be used together with [FIWARE NGSI version 2](https://www.fiware.org/2016/06/08/fiware-ngsi-version-2-release-candidate/).
 
-The application can be seen as two stand-alone services, one that uses tokens as a security measure and the second one that uses sessions as a security measure. Both stand-alone services enable the encryption and decryption of all up-to-date available FIWARE data models published in [FIWARE Data Models official site](https://www.fiware.org/developers/data-models/). 
-First, the overall overview of the encryption service is described; secondly, the stand-alone service that uses tokens is introduced; lastly, the stand-alone service that uses sessions is detailed.
-
-## Installation and Configuration
-### Configuration:
-Para el correcto funcionamiento del servicio es necesario agregar una cuenta de gmail y su contraseña. La cuenta ingresada será la encargada de enviar en un mail con las llaves de todos los modelos encriptados por el servicio.
-
-#### Ingresar cuenta de correo y contraseña: 
-Una vez clonado el repositorio, ingresar en la carpeta del servicio a utilizar [session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/session-based) o [token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/token-based). Dentro de la carpeta ubicar el archivo Dockerfile, entrar y modificar las líneas 4 y 5.
-
-<pre>
-4 ENV ngsi_address_send email(ingresar correo)
-5 ENV ngsi_encrypt_pass password_email(ingresar contraseña del correo)
-</pre>
-
-#### Configuración de Gmail:
-Para que el correo electrónico ingresado anteriormente pueda enviar correos por una aplicación externa es necesario autorizar esta opción en la cuenta del correo ingresado.
-
-ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
-![secure_apps](https://user-images.githubusercontent.com/38957081/51202845-49f61a00-18c5-11e9-88be-1ef960993ce7.png)
-
-Despues de activar esta opción el servicio de encriptacion será capaz de enviar correos desde la dirección proporcionada de forma automatica.
+The application can be seen as two stand-alone services, one that uses tokens as a security measure and the second one that uses sessions as a security measure. Both stand-alone services enable the encryption and decryption of all up-to-date available FIWARE data models published in [FIWARE Data Models official site](https://www.fiware.org/developers/data-models/).
 
 ## Prerequisites
 The encryption service can be installed on any Operative System.
@@ -39,17 +18,30 @@ The following software must be previously installed in the server which will hol
 1. [Postman](https://www.getpostman.com/apps)/[Insomnia](https://insomnia.rest/download/)
 
 Furthermore, the following ports containers are required.
-1. ngsi_nodejs 8000 (only for stand-alone encryption service that uses tokens)
-1. ngsi_python 2121 (only for stand-alone encryption service that uses sessions)
+1. ngsi_nodejs 8000 (only for the token-based service)
+1. ngsi_python 2121 (only for the session-based service)
 
-## Installation:
-Refer to the [Installation Guide session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-sessions).
+The service requires an active Gmail account. The use of other email accounts will cause the malfunction of the service. In order to allow sending and receiving emails from an external application, it is necessary to enable this option in the selected Gmail account. To configure the Gmail account, please:
 
-Refer to the [Installation Guide token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-tokens).
+1. Go to the Gmail account configuration via (https://www.google.com/settings/security/lesssecureapps)
+1. Enable the option "Allow less secure apps"
+![secure_apps](https://user-images.githubusercontent.com/38957081/51202845-49f61a00-18c5-11e9-88be-1ef960993ce7.png)
+
+
+## Installation and Configuration
+First, download or clone the repository to a local directory. Inside each fold of the two implemented services, [session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/session-based) and [token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/token-based), resides a Dockerfile. Open the Dockerfile with a text editor and modify the fourth and fifth lines with your email and the corresponding password, respectively.
+
+<pre>
+4 ENV ngsi_address_send email
+5 ENV ngsi_encrypt_pass password_email
+</pre>
+
+For a complete guide, please refer to:
+1. [Installation Guide of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Session-based service).
+1. [Installation Guide of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Token-based service).
 
 ## Getting started
+Refer to the [User Manual of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Session-based service).
 
-Refer to the [User Manual session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#use-of-services-supported-by-the-encryption-service-1).
-
-Refer to the [User Manual token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#use-of-services-supported-by-the-encryption-service).
+Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#Token-based service).
 
