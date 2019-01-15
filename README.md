@@ -20,6 +20,6 @@ Ingresar cuenta de correo y contraseña: una vez clonado el repositorio, ingresa
 5 ENV ngsi_encrypt_pass password_email(ingresar contraseña del correo)
 
 ### Installation:
-
 Refer to the [Installation Guide session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-sessions).
+
 Refer to the [Installation Guide token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-tokens).
