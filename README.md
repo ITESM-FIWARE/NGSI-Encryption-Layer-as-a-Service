@@ -28,6 +28,8 @@ Para que el correo electronico ingresado anteriormente pueda enviar correos por 
 
 ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
 
+![secure_apps](https://user-images.githubusercontent.com/38957081/51202845-49f61a00-18c5-11e9-88be-1ef960993ce7.png)
+
 ## Prerequisites
 The encryption service can be installed on any Operative System.
 
