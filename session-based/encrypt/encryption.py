@@ -24,7 +24,7 @@ import pprint # imprime por pantalla arreglos JSON en modo pretty()
 import re, os, json, urllib2, urllib
 
 #Dirección de correo gmail
-from_address = os.environ['MAIL_GMAIL']
+from_address = os.environ['ngsi_address_send']
 #Ruta archivo de llaves
 ruta_adjunto = './key.txt'
 #Nombre archivo de llaves
@@ -219,7 +219,7 @@ def sendEMAIL(email, asunto, message):
         smtp.starttls()
         smtp.ehlo()
         #Iniciar sesion en el correo 
-    	smtp.login(from_address,os.environ['PASSWORD'])
+    	smtp.login(from_address,os.environ['ngsi_encrypt_pass'])
         #Crear objeto mensaje
         mensaje = MIMEMultipart() 
         #Se establecen los atributos del mensaje
