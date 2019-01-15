@@ -1,4 +1,10 @@
 FROM ubuntu:16.04
+
+#Enter email and password (only gmail account)
+ENV ngsi_address_send email
+ENV ngsi_encrypt_pass password_email
+
+ENV S_ASDW_K Encrypt_ITESM_LOGIN
 COPY /encrypt /encrypt
 RUN apt update 
 RUN apt install -y default-jre \
@@ -14,10 +20,5 @@ RUN apt install -y default-jre \
 EXPOSE 2121
 WORKDIR /encrypt
 CMD ["gunicorn","--bind","0.0.0.0:2121","wsgi"]
-#Enter mail gmail
-ENV MAIL_GMAIL enter_mail  
-#Enter password mail gmail 
-ENV PASSWORD enter_password_mail
-ENV S_ASDW_K Encrypt_ITESM_LOGIN
 
 
