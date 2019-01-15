@@ -14,7 +14,7 @@ RUN apt install -y default-jre \
 EXPOSE 2121
 WORKDIR /encrypt
 CMD ["gunicorn","--bind","0.0.0.0:2121","wsgi"]
-#Password mail gmail 
+#Enter password mail gmail 
 ENV P_SADEWDA_E password_mail
 ENV S_ASDW_K Encrypt_ITESM_LOGIN
 
