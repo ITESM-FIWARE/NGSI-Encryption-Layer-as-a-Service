@@ -29,7 +29,14 @@ Para que el correo electronico ingresado anteriormente pueda enviar correos por 
 ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
 
 
-### Installation:
+## Installation:
 Refer to the [Installation Guide session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-sessions).
 
 Refer to the [Installation Guide token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-tokens).
+
+## Getting started
+
+Refer to the [User Manual session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#use-of-services-supported-by-the-encryption-service-1).
+
+Refer to the [User Manual token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#use-of-services-supported-by-the-encryption-service).
+
