@@ -1,0 +1,26 @@
+FROM ubuntu:16.04
+
+#Enter email and password (only gmail account)
+ENV ngsi_address_send email
+ENV ngsi_encrypt_pass password_email
+
+COPY ./encrypt-server /home/encrypt-server/server
+
+RUN apt update 
+
+RUN apt install -y default-jre \
+	default-jdk \
+	jq
+
+RUN apt install curl -y && \
+	curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+	curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
+	apt install nodejs -y && \
+	npm install jsonlint -g && \
+	apt-get install wget
+
+WORKDIR /home/encrypt-server/server
+
+RUN npm install
+
+EXPOSE 8000

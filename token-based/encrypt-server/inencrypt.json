@@ -1,0 +1,80 @@
+{
+		"id": "CDMX-AmbientObserved-484150020109",
+		"type": "AirQualityObserved",
+		"CO": {
+			"type": "Number",
+			"value": "0.4",
+			"metadata": {}
+		},
+		"NO2": {
+			"type": "Number",
+			"value": "13",
+			"metadata": {}
+		},
+		"O3": {
+			"type": "Number",
+			"value": "25",
+			"metadata": {}
+		},
+		"PM10": {
+			"type": "Number",
+			"value": "42",
+			"metadata": {}
+		},
+		"SO2": {
+			"type": "Number",
+			"value": "1",
+			"metadata": {}
+		},
+		"address": {
+			"type": "StructuredValue",
+			"value": {
+				"addressCountry": "MX",
+				"addressLocality": "Ciudad de México",
+				"streetAddress": "Acolman"
+			},
+			"metadata": {}
+		},
+		"dateObserved": {
+			"type": "DateTime",
+			"value": "2019-01-10T15:00:00.00Z",
+			"metadata": {}
+		},
+		"location": {
+			"type": "geo:json",
+			"value": {
+				"type": "Point",
+				"coordinates": [
+					-98.912003,
+					19.635501
+				]
+			},
+			"metadata": {}
+		},
+		"measurand": {
+			"type": "Text",
+			"value": [
+				"CO, 0.4, PPM, Carbon Monoxide",
+				"O3, 25, PPB, Ozone",
+				"NO2, 13, PPB, Nitrogen Dioxide",
+				"SO2, 1, PPB, Sulfur Dioxide",
+				"PM10, 42, GQ, Particle Pollution"
+			],
+			"metadata": {}
+		},
+		"relativeHumidity": {
+			"type": "Number",
+			"value": "70",
+			"metadata": {}
+		},
+		"source": {
+			"type": "Text",
+			"value": "http://www.aire.cdmx.gob.mx/",
+			"metadata": {}
+		},
+		"temperature": {
+			"type": "Number",
+			"value": "11",
+			"metadata": {}
+		}
+	}
