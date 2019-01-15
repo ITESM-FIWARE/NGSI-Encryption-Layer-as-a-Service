@@ -23,7 +23,7 @@ Una vez clonado el repositorio, ingresar en la carpeta del servicio a utilizar [
 5 ENV ngsi_encrypt_pass password_email(ingresar contraseña del correo)
 </pre>
 
-#### Configuracion de Gmail:
+#### Configuración de Gmail:
 Para que el correo electrónico ingresado anteriormente pueda enviar correos por una aplicación externa es necesario autorizar esta opción en la cuenta del correo ingresado.
 
 ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
