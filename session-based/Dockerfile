@@ -17,7 +17,7 @@ CMD ["gunicorn","--bind","0.0.0.0:2121","wsgi"]
 #Enter mail gmail
 ENV MAIL_GMAIL enter_mail  
 #Enter password mail gmail 
-ENV PASWORD enter_password_mail
+ENV PASSWORD enter_password_mail
 ENV S_ASDW_K Encrypt_ITESM_LOGIN
 
 
