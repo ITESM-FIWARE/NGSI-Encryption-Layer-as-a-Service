@@ -28,6 +28,16 @@ Para que el correo electronico ingresado anteriormente pueda enviar correos por 
 
 ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
 
+## Prerequisites
+The encryption service can be installed on any Operative System.
+
+The following software must be previously installed in the server which will hold the encryption service.
+1. [Docker](https://www.docker.com/get-started)
+1. [Postman](https://www.getpostman.com/apps)/[Insomnia](https://insomnia.rest/download/)
+
+Furthermore, the following ports containers are required.
+1. ngsi_nodejs 8000 (only for stand-alone encryption service that uses tokens)
+1. ngsi_python 2121 (only for stand-alone encryption service that uses sessions)
 
 ## Installation:
 Refer to the [Installation Guide session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-sessions).
