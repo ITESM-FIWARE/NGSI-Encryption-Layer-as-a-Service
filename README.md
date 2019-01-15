@@ -15,12 +15,19 @@ First, the overall overview of the encryption service is described; secondly, th
 ### Configuration:
 Para el correcto funcionamiento del servicio es necesario agregar una cuenta de gmail y su contraseña. La cuenta ingresada será la encargada de enviar las llaves de todos los modelos encriptados por el servicio en un mail al usuario que haga uso del servicio.
 
-Ingresar cuenta de correo y contraseña: una vez clonado el repositorio, ingresar en la carpeta del servicio a utilizar session-based o token-based. Dentro de la carpeta ubicar el archivo Dockerfile, entrar y modificar las líneas 4 y 5.
+#### Ingresar cuenta de correo y contraseña: 
+Una vez clonado el repositorio, ingresar en la carpeta del servicio a utilizar [session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/session-based) o [token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/token-based). Dentro de la carpeta ubicar el archivo Dockerfile, entrar y modificar las líneas 4 y 5.
 
 <pre>
 4 ENV ngsi_address_send email(ingresar correo)
 5 ENV ngsi_encrypt_pass password_email(ingresar contraseña del correo)
 </pre>
+
+#### Configuracion de Gmail:
+Para que el correo electronico ingresado anteriormente pueda enviar correos por una aplicación externa es necesario autorizar esta opcion en la cuenta del correo ingresado.
+
+ingrese a (https://www.google.com/settings/security/lesssecureapps) mientras está conectado a su cuenta de Google y activar la opcion "Allow less secure apps". 
+
 
 ### Installation:
 Refer to the [Installation Guide session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#encryption-service-with-sessions).
