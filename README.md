@@ -29,7 +29,7 @@ The service requires an active Gmail account. The use of other email accounts wi
 
 
 ## Installation and Configuration
-First, download or clone the repository to a local directory. Inside each fold of the two implemented services, [session-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/session-based) and [token-based](https://github.com/ITESM-FIWARE/NGSI-Encryption-as-a-Service/tree/master/token-based), resides a Dockerfile. Open the Dockerfile with a text editor and modify the fourth and fifth lines with your email and the corresponding password, respectively.
+First, download or clone the repository to a local directory. Inside each fold of the two implemented services, [session-based](https://github.com/ITESM-FIWARE/data-encryption/tree/master/session-based) and [token-based](https://github.com/ITESM-FIWARE/data-encryption/tree/master/token-based), resides a Dockerfile. Open the Dockerfile with a text editor and modify the fourth and fifth lines with your email and the corresponding password, respectively.
 
 <pre>
 4 ENV ngsi_address_send email
@@ -37,11 +37,11 @@ First, download or clone the repository to a local directory. Inside each fold o
 </pre>
 
 For a complete guide, please refer to:
-1. [Installation Guide of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#session-based-service).
-1. [Installation Guide of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#token-based-service).
+1. [Installation Guide of the Session-based service](https://github.com/ITESM-FIWARE/data-encryption#session-based-service).
+1. [Installation Guide of the Token-based service](https://github.com/ITESM-FIWARE/data-encryption#token-based-service).
 
 ## Getting started
-Refer to the [User Manual of the Session-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#session-based-service).
+Refer to the [User Manual of the Session-based service](https://github.com/ITESM-FIWARE/data-encryption#session-based-service).
 
-Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/NGSI-Encryption-Layer-as-a-Service#token-based-service).
+Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/data-encryption#token-based-service).
 
