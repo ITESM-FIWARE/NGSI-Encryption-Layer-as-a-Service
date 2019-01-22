@@ -43,5 +43,5 @@ For a complete guide, please refer to:
 ## Getting started
 Refer to the [User Manual of the Session-based service](https://github.com/ITESM-FIWARE/data-encryption#session-based-service).
 
-Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/data-encryption#token-based-service).
+Refer to the [User Manual of the Token-based service](https://github.com/ITESM-FIWARE/data-encryption#sign-up).
 
